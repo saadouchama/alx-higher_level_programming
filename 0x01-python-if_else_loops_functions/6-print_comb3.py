@@ -9,4 +9,4 @@ while i < 9:
             print(end=', ')
         j += 1
     i += 1
-print("\n")
+print(end='\n')
