@@ -1,0 +1,83 @@
+# The ``print_square`` module
+=============================
+
+Using the ``print_square`` function
+-----------------------------------
+
+This module provides a function called ``print_square`` that prints a square of a given size using the ``#`` character.
+
+The function takes one argument, ``size``, which is the size of the square to print.
+
+The function does not return anything.
+
+Importing the function print_square.
+    >>> print_square = __import__('4-print_square').print_square
+
+Printing a square of size 4.
+    >>> print_square(4)
+    ####
+    ####
+    ####
+    ####
+
+Printing a square of size 10.
+    >>> print_square(10)
+    ##########
+    ##########
+    ##########
+    ##########
+    ##########
+    ##########
+    ##########
+    ##########
+    ##########
+    ##########
+
+
+Printing a square of size 0.
+    >>> print_square(0)
+
+Passing non-integers as size.
+    >>> print_square('4')
+    Traceback (most recent call last):
+        ...
+    TypeError: size must be an integer
+
+    >>> print_square((1,))
+    Traceback (most recent call last):
+        ...
+    TypeError: size must be an integer
+
+    >>> print_square(True)
+    #
+
+Passing a negative number as size.
+    >>> print_square(-2)
+    Traceback (most recent call last):
+        ...
+    ValueError: size must be >= 0
+
+Passing None as size.
+    >>> print_square(None)
+    Traceback (most recent call last):
+    	...
+    TypeError: size must be an integer
+
+Passing a float as size.
+    >>> print_square(4.4)
+    Traceback (most recent call last):
+        ...
+    TypeError: size must be an integer
+
+Passing no argument to print_square().
+    >>> print_square()
+    Traceback (most recent call last):
+   	    ...
+    TypeError: print_square() missing 1 required positional argument: 'size'
+
+Passing more than two arguments to print_square().
+    >>> print_square(1, 2) #doctest: +ELLIPSIS
+    Traceback (most recent call last):
+        ...
+    TypeError: print_square() takes 1 positional argument but ...
+
