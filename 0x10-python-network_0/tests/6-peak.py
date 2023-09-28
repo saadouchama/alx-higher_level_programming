@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Defines a peak-finding algorithm."""
+""" Answer for Task 6 """
 
 
 def find_peak(list_of_integers):
